@@ -5,7 +5,7 @@ import {
   insertUserSchema, insertAssessmentSchema, insertEducationFormSchema, 
   insertJobApplicationSchema, insertPdfReportSchema 
 } from "@shared/schema";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { generateCareerQuestions, analyzeCareerFit, generatePersonalizedRoadmap } from './geminiService';
 import { generateCareerAssessmentPDF, generateUniqueId } from './pdfService';
